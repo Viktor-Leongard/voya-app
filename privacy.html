@@ -27,20 +27,34 @@
   <div class="wrap">
     <header><span class="mark">Voya</span></header>
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated 6 June 2026</p>
+    <p class="muted">Last updated 8 October 2026</p>
 
     <p>Voya is a vacation and time-off planner that helps you see your whole year, find bridge days, and plan around holidays. We built Voya to be private by design. This policy explains what information the app handles and how.</p>
 
     <h2>The short version</h2>
     <ul>
-      <li>Your plans stay on your device. We run no servers and never receive them.</li>
-      <li>No account or sign-up is required to use Voya.</li>
+      <li>Your plans stay on your device unless you turn on cloud sync.</li>
+      <li>No account or sign-up is required to use Voya. An account is optional and only needed for cloud sync.</li>
+      <li>You can delete your account at any time, in the app or <a href="delete-account.html">without it</a>.</li>
       <li>We do not use analytics or tracking SDKs.</li>
       <li>The app shows ads through Google AdMob, which collects limited data to serve them.</li>
     </ul>
 
     <h2>Information stored on your device</h2>
-    <p>Your vacation days, overtime and balances, calendars you create, events, and your settings are stored locally on your device. This information is not sent to us and is not synced to any server we operate. Removing the app removes this data.</p>
+    <p>Your vacation days, overtime and balances, calendars you create, events, and your settings are stored locally on your device. Unless you turn on cloud sync, this information is not sent to us. Removing the app removes the data on that device.</p>
+
+    <h2>Account and cloud sync (optional)</h2>
+    <p>From version 1.2, you can sign in to keep your plan in sync across your devices and to keep a backup when you change phones. You can sign in with Apple, Google, or an email address and password. Voya works fully without signing in.</p>
+    <p>If you sign in, we use Google Firebase to run the account and store the synced plan:</p>
+    <ul>
+      <li><strong>Account data</strong> (Firebase Authentication): your email address, a user ID, and the sign-in method. If you use "Hide My Email" with Apple, we only see the relay address.</li>
+      <li><strong>Your plan</strong> (Cloud Firestore, stored in the EU): vacation and flex days, allowance, overtime, regions, and display settings. Connected calendars and their events are not synced.</li>
+    </ul>
+    <p>This data is used only to sync your plan between your devices. It is not used for advertising, not sold, and not shared with anyone else. Only your signed-in account can read your plan. Google processes the data for us as a service provider under the <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy terms</a>.</p>
+    <p>We keep this data while your account exists. Signing out stops syncing but keeps the account.</p>
+
+    <h2>Deleting your account</h2>
+    <p>In the app, tap the Voya logo to open <strong>Cloud sync</strong>, then tap <strong>Delete account</strong>. This permanently deletes your account and the cloud copy of your plan. The plan on your device stays. If you no longer have the app, follow the steps on <a href="delete-account.html">Delete your account</a>.</p>
 
     <h2>Calendar connections (optional)</h2>
     <p>If you choose to connect a calendar, Voya uses the provider's official, read-only sign-in:</p>
@@ -60,7 +74,7 @@
     <p>Voya is not directed to children and we do not knowingly collect personal information from children.</p>
 
     <h2>Your choices</h2>
-    <p>Because your data lives on your device, you stay in control: disconnect calendars, clear your plans, or uninstall the app to remove everything. For any questions or requests, contact us below.</p>
+    <p>You stay in control: disconnect calendars, clear your plans, sign out of cloud sync, delete your account, or uninstall the app. You can ask us for a copy of your synced data or for its deletion at any time. For any questions or requests, contact us below.</p>
 
     <h2>Changes to this policy</h2>
     <p>If this policy changes, we will update the date at the top of this page.</p>
@@ -71,7 +85,7 @@
     </div>
 
     <footer>
-      <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
+      <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="delete-account.html">Delete account</a></nav>
       <p class="muted">© 2026 Viktor Leongard. All rights reserved.</p>
     </footer>
   </div>
